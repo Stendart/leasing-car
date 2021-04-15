@@ -1,5 +1,15 @@
 @import 'variables.scss';
 
-nav {
-
+.nav {
+  display: flex;
+}
+.nav__logo-wrapper {
+  display: flex;
+}
+.nav__text::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: black;
 }
