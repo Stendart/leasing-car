@@ -27,6 +27,14 @@
     position: relative;
     left: 0;
     transition: transform ease 1s;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      margin-top: -80px;
+    }
+
+    /*@media (max-width: $mobile-width) {
+      margin-top: -80px;
+    }*/
 }
 
 .carousel__poitns {

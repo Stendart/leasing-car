@@ -18,7 +18,11 @@
   left: 5%;
   top: 5%;
   width: 40%;
-  min-width: 585px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 585px;
+  }
+
 }
 
 .car__title {
@@ -35,6 +39,22 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .car__info {
+      top: 40%;
+    }
+    .car__title {
+      margin: 20px 0;
+    }
+    .car__descrition {
+      display: none;
+    }
 }
 
 .car__btn {

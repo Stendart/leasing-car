@@ -58,7 +58,41 @@
           <ul class="carousel__poitns">
         </article>
       </section>
-    </main>
 
+      <section class="price">
+        <p class="price__title">Рассчитайте стоимость автомобиля в лизинг</p>
+        <div class="price__range-wrap">
+          <article class="car-data ">
+            <label for="priceAuto">Стоимость автомобиля</label>
+            <div class="price__symbol">
+              <input id="priceAutoText" class="price__display" type="text"> <img class="symbol symbol--rub" src="assets/img/rub.svg" alt="placeholder+image">
+            </div>
+            <input class="range" type="range" min="1000000" max="6000000" name="priceAuto" id="priceAuto">
+          </article>
+
+          <article class="car-data ">
+            <label for="initial-pay">Первоначальный взнос</label>
+            <div class="price__symbol">
+              <input id="initial-pay-info" class="price__display" type="text">
+              <span class="symbol symbol--percen" >
+                %
+              </span> <!--<img class="symbol" src="assets/img/rub.svg" alt="placeholder+image">-->
+            </div>
+            <input class="range" type="range" min="10" max="60" name="initial-pay" id="initial-pay">
+          </article>
+
+          <article class="car-data ">
+            <label for="leasing">Стоимость автомобиля</label>
+            <div class="price__symbol">
+              <input id="leasing-info" class="price__display" type="text"> <span class="symbol symbol--mounth" >
+                мес.
+              </span>
+            </div>
+            <input class="range" type="range" min="1" max="60" name="leasing" id="leasing">
+          </article>
+        </div>
+
+      </section>
+    </main>
 	</body>
 	</html>
