@@ -1,0 +1,13 @@
+@import 'car.scss';
+.main {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+
+  width: 93%;
+  margin: 16px auto;
+
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+      /*max-width: 930px;*/
+  }
+}

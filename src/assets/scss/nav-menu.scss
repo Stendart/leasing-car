@@ -1,11 +1,11 @@
 @import 'variables.scss';
 @import 'burger.scss';
+@import 'button.scss';
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*max-width: 1445px;*/
   width: 93%;
   margin: 16px auto;
 
@@ -16,15 +16,12 @@
 .nav__logo-wrapper {
   display: flex;
   justify-content: space-between;
-  /*max-width: 500px;*/
   width: 30%;
   position: relative;
 
-&:before {
+  &:before {
     content: '';
-    /*display: block;*/
     position: absolute;
-    /*justify-self: center;*/
     width: 1px;
     height: 35px;
     background-color: black;
@@ -53,6 +50,11 @@
   color: rgba(17, 17, 17, 0.5);
 }
 
+@media (max-width: $mobile-width) {
+  .nav__logo-wrapper:before, .nav__text {
+    display: none;
+  }
+}
 
 .menu {
    list-style: none;
@@ -71,14 +73,13 @@
    max-width: 50%;
 
   .menu__button {
-    border: 1px solid #FF9514;
-    /*box-sizing: border-box;*/
+    /*border: 1px solid #FF9514;
     border-radius: 40px;
     background-color: #FFF;
 
     padding: 12px 24px;
 
-    color: #FF9514;
+    color: #FF9514;*/
   }
 
 }

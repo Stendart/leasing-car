@@ -1,0 +1,92 @@
+
+
+.carousel {
+    border: 2px solid black;
+    position: relative;
+    max-width: 60%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+      max-width: 66%;
+    }
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      max-width: 82%;
+      align-items: flex-start;
+      /*justify-content: center;*/
+    }
+}
+
+.carousel__line {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: transform ease 1s;
+}
+
+.carousel__poitns {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  z-index: 3;
+
+  bottom: 10%;
+  left: 50%;
+
+
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+    left: 50%;
+  }
+}
+
+.carousel__item {
+  width: 6px;
+  height: 6px;
+
+  margin-right: 10px;
+
+  border-radius: 30px;
+  background-color: #FFF;
+  opacity: 0.4;
+}
+
+.carousel__item--select {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.carousel__btns {
+  position: absolute;
+
+  right: 5%;
+  bottom: 10%;
+
+   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: none;
+   }
+}
+
+.carousel__btn {
+  opacity: 0.3;
+
+  outline:none;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  /*filter: drop-shadow(0px 10px 30px rgba(88, 88, 88, 0.3));*/
+}
+
+.prev {
+  transform: rotate(180deg);
+}
