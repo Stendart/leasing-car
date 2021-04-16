@@ -1,15 +1,99 @@
 @import 'variables.scss';
+@import 'burger.scss';
 
 .nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*max-width: 1445px;*/
+  width: 93%;
+  margin: 16px auto;
+
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+      /*max-width: 930px;*/
+  }
 }
 .nav__logo-wrapper {
   display: flex;
+  justify-content: space-between;
+  /*max-width: 500px;*/
+  width: 30%;
+  position: relative;
+
+&:before {
+    content: '';
+    /*display: block;*/
+    position: absolute;
+    /*justify-self: center;*/
+    width: 1px;
+    height: 35px;
+    background-color: black;
+
+    transform: translateX(50%);
+    left: 50%;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 53%;
+  }
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+      width: 41%;
+  }
+
 }
-.nav__text::before {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 20px;
-  background-color: black;
+.nav__text {
+  position: relative;
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  letter-spacing: 0.92px;
+  color: rgba(17, 17, 17, 0.5);
 }
+
+
+.menu {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+
+
+  @media(max-width: $pre-desktop-width) {
+    display: none;
+  }
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   max-width: 50%;
+
+  .menu__button {
+    border: 1px solid #FF9514;
+    /*box-sizing: border-box;*/
+    border-radius: 40px;
+    background-color: #FFF;
+
+    padding: 12px 24px;
+
+    color: #FF9514;
+  }
+
+}
+.menu__item {
+  margin-left: 30px;
+
+  a {
+    text-decoration: none;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #575757;
+  }
+}
+

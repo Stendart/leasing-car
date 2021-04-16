@@ -3,26 +3,30 @@
 	<head>
 		<title>Document</title>
 		<meta name="description" content="краткое описание страницы">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
 	<body>
 		<nav class="nav">
 			<div class="nav__logo-wrapper">
-				<img class="nav__logo" src="./assets/img/logos/logo1440.svg">
+        <picture>
+          <source srcset="./assets/img/logos/logo1440.svg" media="(min-width: 1200px)">
+          <img class="nav__logo" src="./assets/img/logos/logo1024.svg" alt="logo">
+        </picture>
+				<!--<img class="nav__logo" src="./assets/img/logos/logo1440.svg">-->
 				<p class="nav__text">Лизинговая компания</p>
 			</div>
-      <ul class="nav__menu">
-        <li>Лизинг</li>
-        <li>Каталог</li>
-        <li>О нас</li>
+      <ul class="nav__menu menu">
+        <li class="menu__item"><a href="">Лизинг</a></li>
+        <li class="menu__item"><a href="">Каталог</a></li>
+        <li class="menu__item"><a href="">О нас</a></li>
+        <li class="menu__item"><button class="menu__button">Оставить заявку</button></li>
       </ul>
-      <button>Оставить заявку</button>
+      <button class="nav__burger js-burger nav__burger--closed"><!--<img src="./img/icon-menu.svg">-->
+          <span class="visualy-hidden">Burger-menu</span>
+      </button>
 		</nav>
 
-
-		<div id="app">
-Проверка
-        </div>
 	</body>
 	</html>
