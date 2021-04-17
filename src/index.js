@@ -4,4 +4,3 @@ import './js/carousel.js';
 import './js/range.js';
 
 console.log('its work')
-console.log('its work')

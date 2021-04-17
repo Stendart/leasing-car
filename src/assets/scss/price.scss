@@ -37,7 +37,7 @@
 
   margin-top: 24px;
 }
-.price__symbol {
+.car-data__price-symbol {
   position: relative;
 }
 
@@ -89,7 +89,34 @@
   max-width: 50%
 }
 
+.contract {
+  display: flex;
 
+}
+
+.contract__title {
+  font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+
+/* Gray 1 */
+
+color: #333333;
+}
+
+.contract__sum {
+  font-family: Nekst-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+
+  color: #333333;
+}
 
 .range {
   -webkit-appearance: none;

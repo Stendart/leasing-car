@@ -59,20 +59,22 @@
         </article>
       </section>
 
+
       <section class="price">
         <p class="price__title">Рассчитайте стоимость автомобиля в лизинг</p>
         <div class="price__range-wrap">
-          <article class="car-data ">
-            <label for="priceAuto">Стоимость автомобиля</label>
-            <div class="price__symbol">
+
+          <article class="car-data">
+            <label for="price-auto">Стоимость автомобиля</label>
+            <div class="car-data__price-symbol">
               <input id="priceAutoText" class="price__display" type="text"> <img class="symbol symbol--rub" src="assets/img/rub.svg" alt="placeholder+image">
             </div>
-            <input class="range" type="range" min="1000000" max="6000000" name="priceAuto" id="priceAuto">
+            <input class="range" type="range" min="1000000" max="6000000" name="price-auto" id="price-auto">
           </article>
 
           <article class="car-data ">
             <label for="initial-pay">Первоначальный взнос</label>
-            <div class="price__symbol">
+            <div class="car-data__price-symbol">
               <input id="initial-pay-info" class="price__display" type="text">
               <span class="symbol symbol--percen" >
                 %
@@ -83,13 +85,24 @@
 
           <article class="car-data ">
             <label for="leasing">Стоимость автомобиля</label>
-            <div class="price__symbol">
+            <div class="car-data__price-symbol">
               <input id="leasing-info" class="price__display" type="text"> <span class="symbol symbol--mounth" >
                 мес.
               </span>
             </div>
             <input class="range" type="range" min="1" max="60" name="leasing" id="leasing">
           </article>
+
+        </div>
+        <div class="contract">
+          <div>
+            <p class="contract__title" type="text">Сумма договора лизинга</p>
+            <p class="contract__sum" type="text">4 467 313 &#8381; </p>
+          </div>
+          <div>
+            <p class="contract__title" type="text">Ежемесячный платеж от</p>
+            <p class="contract__sum" type="text">114 455 &#8381; </p>
+          </div>
         </div>
 
       </section>

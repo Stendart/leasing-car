@@ -1,6 +1,6 @@
 // range 1
 
-const priceAuto = document.getElementById("priceAuto");
+const priceAuto = document.getElementById("price-auto");
 const priceAutoText = document.getElementById("priceAutoText");
 
 
@@ -72,3 +72,4 @@ console.log('leasing.max', leasing.max)
   }
   leasing.value = this.value;
 };
+
