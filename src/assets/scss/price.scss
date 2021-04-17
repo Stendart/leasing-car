@@ -4,6 +4,18 @@
   margin-top: 100px;
 }
 
+.price__title {
+  font-family: Nekst;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+
+  color: #111111;
+
+  max-width: 50%
+}
+
 .price__range-wrap {
   display: flex;
   justify-content: space-between;
@@ -15,14 +27,13 @@
 }
 
 .car-data {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
 
-
-    @media (min-width: $high-desktop-width) {
-      max-width: 430px;
-      width: 31.8%;
+  @media (min-width: $high-desktop-width) {
+    max-width: 430px;
+    width: 31.8%;
   }
 }
 
@@ -82,33 +93,71 @@
 .symbol--mounth {
 }
 
-.price__title {
-  font-family: Nekst-Black;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 90%;
 
-  color: #111111;
+.calculate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  max-width: 50%
+  margin-top: 37px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  @media (min-width: $high-desktop-width) {
+    flex-direction: row;
+    margin-top: 44px;
+  }
+}
+
+.contract-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+
+  color: #333;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+    max-width: 77%;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    max-width: 86%;
+  }
+
+  @media (min-width: $high-desktop-width) {
+    color: $color-gray;
+    max-width: 52%;
+    /*margin-top: 44px;*/
+  }
 }
 
 .contract {
-  display: flex;
 
 }
 
+.contract--mb {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
+}
+
+
 .contract__title {
   font-family: Gilroy;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 150%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
 
-
-
-color: #333333;
+  color: #333333;
 }
 
 .contract__sum {
@@ -120,6 +169,43 @@ color: #333333;
 
   color: #333333;
 }
+
+.price__btn-wrap {
+  margin-top: 44px;
+
+  @media (min-width: $high-desktop-width) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 32px;
+  }
+}
+
+.price__btn {
+  /*margin-top: 10%;*/
+
+  font-family: Nekst;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+
+  padding-left: 52px;
+  padding-right: 52px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $high-desktop-width) {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+}
+
+
 
 .range {
   -webkit-appearance: none;

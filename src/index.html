@@ -94,16 +94,35 @@
           </article>
 
         </div>
-        <div class="contract">
-          <div>
-            <p class="contract__title" type="text">Сумма договора лизинга</p>
-            <p class="contract__sum" type="text">4 467 313 &#8381; </p>
+
+        <div class="calculate">
+          <div class="contract-wrapper">
+            <div class="contract contract--mb">
+              <p class="contract__title" type="text">Сумма договора лизинга</p>
+              <p class="contract__sum" type="text">
+                4 467 313
+                <picture>
+                  <source srcset="assets/img/rub.svg" media="(min-width: 1440px)">
+                  <img class="symbol--rub" src="assets/img/rub-black.svg" alt="placeholder+image">
+                </picture>
+              </p>
+            </div>
+            <div class="contract">
+              <p class="contract__title" type="text">Ежемесячный платеж от</p>
+              <p class="contract__sum" type="text">
+                114 455
+                <picture>
+                  <source srcset="assets/img/rub.svg" media="(min-width: 1440px)">
+                  <img class="symbol--rub" src="assets/img/rub-black.svg" alt="placeholder+image">
+                </picture>
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="contract__title" type="text">Ежемесячный платеж от</p>
-            <p class="contract__sum" type="text">114 455 &#8381; </p>
+          <div class="price__btn-wrap">
+            <button class="btn btn--primary price__btn">Оставить заявку</button>
           </div>
         </div>
+
 
       </section>
     </main>
