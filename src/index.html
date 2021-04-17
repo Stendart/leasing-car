@@ -66,29 +66,29 @@
 
           <article class="car-data">
             <label for="price-auto">Стоимость автомобиля</label>
-            <div class="car-data__price-symbol">
-              <input id="priceAutoText" class="price__display" type="text"> <img class="symbol symbol--rub" src="assets/img/rub.svg" alt="placeholder+image">
+            <div class="car-data__display-wrapper">
+              <input id="priceAutoText" class="car-data__display" type="text">
+              <span class="symbol ">
+                <img class="symbol--rub" src="assets/img/rub.svg" alt="placeholder+image">
+              </span>
             </div>
             <input class="range" type="range" min="1000000" max="6000000" name="price-auto" id="price-auto">
           </article>
 
           <article class="car-data ">
             <label for="initial-pay">Первоначальный взнос</label>
-            <div class="car-data__price-symbol">
-              <input id="initial-pay-info" class="price__display" type="text">
-              <span class="symbol symbol--percen" >
-                %
-              </span> <!--<img class="symbol" src="assets/img/rub.svg" alt="placeholder+image">-->
+            <div class="car-data__display-wrapper">
+              <input id="initial-pay-info" class="car-data__display" type="text">
+              <span class="symbol symbol--percen" > % </span>
             </div>
             <input class="range" type="range" min="10" max="60" name="initial-pay" id="initial-pay">
           </article>
 
           <article class="car-data ">
             <label for="leasing">Стоимость автомобиля</label>
-            <div class="car-data__price-symbol">
-              <input id="leasing-info" class="price__display" type="text"> <span class="symbol symbol--mounth" >
-                мес.
-              </span>
+            <div class="car-data__display-wrapper">
+              <input id="leasing-info" class="car-data__display" type="text">
+              <span class="symbol symbol--mounth"> мес. </span>
             </div>
             <input class="range" type="range" min="1" max="60" name="leasing" id="leasing">
           </article>

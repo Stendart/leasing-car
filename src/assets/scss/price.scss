@@ -17,7 +17,7 @@
 .car-data {
     display: flex;
     flex-direction: column;
-
+    margin-top: 32px;
 
 
     @media (min-width: $high-desktop-width) {
@@ -26,55 +26,60 @@
   }
 }
 
-.price__display {
-  width: 100%;
+.car-data__display {
+  width: 80%;
   height: 68px;
   background: #F3F3F4;
-  border-radius: 16px;
   border-style: none;
+  outline: none;
 
-  position: relative;
+  border-radius: 16px;
+  /*position: relative;*/
 
-  margin-top: 24px;
+  font-family: Nekst-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: $color-gray;
+
 }
-.car-data__price-symbol {
-  position: relative;
+
+.car-data__display-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 24px;
+  padding-right: 7px;
+  /*position: relative;*/
+  background: #F3F3F4;
+
+  border-radius: 16px;
+  margin-top: 24px;
 }
 
 .symbol {
-  position: absolute;
+  line-height: 54px;
+  text-align: center;
+
+  width: 69px;
+  height: 54px;
 }
 
 .symbol--rub {
   width: 20px;
   height: 36px;
-  top: 40%;
-  right: 5%;
+  vertical-align: middle;
 }
 
 .symbol--percen {
-  width: 69px;
-  height: 54px;
   background: #E0E0E0;
-
-  top: 35%;
-  right: 2%;
-
   border-radius: 16px;
-
-  line-height: 54px;
-  text-align: center;
 }
 
 .symbol--mounth {
-  width: 69px;
-  height: 54px;
-
-  top: 30%;
-  right: 2%;
-
-  line-height: 54px;
-  text-align: center;
 }
 
 .price__title {
@@ -100,10 +105,8 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 150%;
-/* identical to box height, or 24px */
 
 
-/* Gray 1 */
 
 color: #333333;
 }
@@ -120,14 +123,19 @@ color: #333333;
 
 .range {
   -webkit-appearance: none;
-  margin: 18px 0;
-  width: 100%;
+  margin-top: 0;
+  margin-left: 2.5%;
+  width: 95%;
 
 
 }
 .range:focus {
   outline: none;
 }
+
+
+
+
 .range::-webkit-slider-runnable-track {
   width: 100%;
   height: $range-track-height;
