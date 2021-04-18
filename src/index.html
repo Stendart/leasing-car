@@ -30,7 +30,8 @@
 
     <main class="main">
       <section>
-        <article class="car">
+
+        <!--<article class="car">
           <div class="car__info">
               <h1 class="car__title">Авто в лизинг для физических лиц </h1>
               <p class="car__descrition">Получите машину за 5 дней</p>
@@ -45,7 +46,7 @@
               <li><img src="assets/img/cars/car1440.jpg" alt="placeholder+image"></li>
             </ul>
 
-            </ul>
+
             <div class="carousel__btns">
               <button class="js__prev carousel__btn">
                 <img class="prev" src="assets/img/arr.svg" alt="placeholder+image">
@@ -55,8 +56,79 @@
               </button>
             </div>
           </div>
-          <ul class="carousel__poitns">
-        </article>
+          <ul class="carousel__poitns"></ul>
+        </article> -->
+        <br>
+        <br>
+        <br>
+
+        <div class="carousel-wrapper">
+          <div class="carousel">
+
+            <div class="carousel__item item js-item ">
+              <div class="item__info">
+                <h1 class="item__title">Авто в лизинг для <br> физических лиц </h1>
+                <p class="item__descrition">Получите машину за 5 дней</p>
+                <button class="carousel__btn btn btn--primary">Оставить заявку</button>
+              </div>
+              <picture>
+                <source srcset="./assets/img/slider/car1440.jpg" media="(min-width: 1440px)">
+                <source srcset="./assets/img/slider/car1024.jpg" media="(min-width: 1024px)">
+                <source srcset="./assets/img/slider/car768.jpg" media="(min-width: 768px)">
+                <img class="item__img" src="assets/img/slider/car320.jpg" alt="placeholder+image">
+              </picture>
+            </div>
+
+            <div class="carousel__item item js-item hide">
+              <div class="item__info">
+                <span class="item__title">Второй слайд </span>
+                <p class="item__descrition">Получите машину за 5 дней</p>
+                <button class="carousel__btn btn btn--primary">Оставить заявку</button>
+              </div>
+              <picture>
+                <source srcset="./assets/img/slider/car1440.jpg" media="(min-width: 1440px)">
+                <source srcset="./assets/img/slider/car1024.jpg" media="(min-width: 1024px)">
+                <source srcset="./assets/img/slider/car768.jpg" media="(min-width: 768px)">
+                <img class="item__img" src="assets/img/slider/car320.jpg" alt="placeholder+image">
+              </picture>
+            </div>
+
+            <div class="carousel__item item js-item hide">
+              <div class="item__info">
+                <span class="item__title">Третий слайд </span>
+                <p class="item__descrition">Получите машину за 5 дней</p>
+                <button class="carousel__btn btn btn--primary">Оставить заявку</button>
+              </div>
+              <picture>
+                <source srcset="./assets/img/slider/car1440.jpg" media="(min-width: 1440px)">
+                <source srcset="./assets/img/slider/car1024.jpg" media="(min-width: 1024px)">
+                <source srcset="./assets/img/slider/car768.jpg" media="(min-width: 768px)">
+                <img class="item__img" src="assets/img/slider/car320.jpg" alt="placeholder+image">
+              </picture>
+            </div>
+
+            <div class="carousel__item item js-item hide">
+              <div class="item__info">
+                <span class="item__title">Четвертый слайд </span>
+                <p class="item__descrition">Получите машину за 5 дней</p>
+                <button class="carousel__btn btn btn--primary">Оставить заявку</button>
+              </div>
+              <picture>
+                <source srcset="./assets/img/slider/car1440.jpg" media="(min-width: 1440px)">
+                <source srcset="./assets/img/slider/car1024.jpg" media="(min-width: 1024px)">
+                <source srcset="./assets/img/slider/car768.jpg" media="(min-width: 768px)">
+                <img class="item__img" src="assets/img/slider/car320.jpg" alt="placeholder+image">
+              </picture>
+            </div>
+
+
+            <div class="carousel__slide-btns">
+              <button class="js__prev carousel__slide-btn carousel__slide-btn--prev"></button>
+              <button class="js__next carousel__slide-btn carousel__slide-btn--next"></button>
+            </div>
+          </div>
+        </div>
+
       </section>
 
 
@@ -92,7 +164,6 @@
             </div>
             <input class="range" type="range" min="1" max="60" name="leasing" id="leasing">
           </article>
-
         </div>
 
         <div class="calculate">
