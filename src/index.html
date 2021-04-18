@@ -11,7 +11,8 @@
 		<nav class="nav">
 			<div class="nav__logo-wrapper">
         <picture>
-          <source srcset="./assets/img/logos/logo1440.svg" media="(min-width: 1200px)">
+          <source srcset="./assets/img/logos/logo1440.svg" media="(min-width: 1440px)">
+          <source srcset="./assets/img/logos/logo320.svg" media="(max-width: 767px)">
           <img class="nav__logo" src="./assets/img/logos/logo1024.svg" alt="logo">
         </picture>
 				<!--<img class="nav__logo" src="./assets/img/logos/logo1440.svg">-->
@@ -19,6 +20,20 @@
 			</div>
       <ul class="nav__menu menu">
         <li class="menu__item"><a href="">Лизинг</a></li>
+
+
+
+        <ul class="dropdown">
+            <li class="menu__item"><a href="">Лизинг</a>
+                <ul class="dropdown__items">
+                    <li class="dropdown__element menu__item"><a href="">Лизинг</a></li>
+                    <li class="dropdown__element menu__item"><a href="">Лизинг</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+
         <li class="menu__item"><a href="">Каталог</a></li>
         <li class="menu__item"><a href="">О нас</a></li>
         <li class="menu__item"><button class="menu__button btn">Оставить заявку</button></li>
@@ -36,7 +51,7 @@
 
             <div class="carousel__item item js-item ">
               <div class="item__info">
-                <h1 class="item__title">Авто в лизинг для <br> физических лиц </h1>
+                <h1 class="item__title">Авто в лизинг для физических лиц </h1>
                 <p class="item__descrition">Получите машину за 5 дней</p>
                 <button class="carousel__btn btn btn--primary">Оставить заявку</button>
               </div>

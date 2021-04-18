@@ -134,7 +134,21 @@ function createDomElement(el = 'li') {
   return newEl;
 }
 
-items.forEach(item => {
+function initSliderPoints() {
+  items.forEach(item => {
+      sliderPoints.push(createDomElement('li'));
+  });
+
+  sliderPoints[numSlide].classList.add('carousel__item-point--select');
+
+  sliderPoints.forEach(item => {
+      carouselPoitns.appendChild(item);
+  });
+
+  carouselPoitns.style.transform = `translate(-${carouselPoitns.offsetWidth/2}px)`
+}
+
+/*items.forEach(item => {
   sliderPoints.push(createDomElement('li'));
 });
 
@@ -142,8 +156,11 @@ sliderPoints[numSlide].classList.add('carousel__item-point--select');
 
 sliderPoints.forEach(item => {
     carouselPoitns.appendChild(item);
-});
+});*/
 
 setSlide();
+initSliderPoints();
 prevBtn.addEventListener('click', () => changeSlide('prev'));
 nextBtn.addEventListener('click', () => changeSlide('next'));
+
+//setInterval(changeSlide, 10000, 'next');

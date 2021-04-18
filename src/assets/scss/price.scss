@@ -2,6 +2,14 @@
 
 .price {
   margin-top: 100px;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-high-desktop-width) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: calc(64px + 550px);
+  }
 }
 
 .price__title {
@@ -13,7 +21,21 @@
 
   color: #111111;
 
-  max-width: 50%
+  max-width: 50%;
+
+
+  @media (min-width: $desktop-width) and (max-width: $pre-high-desktop-width) {
+    max-width: 70%;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+    max-width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 34px;
+    line-height: 90%;
+  }
 }
 
 .price__range-wrap {
@@ -21,15 +43,23 @@
   justify-content: space-between;
   margin-top: 32px;
 
-  @media (max-width: $high-desktop-width) {
+  @media (max-width: $pre-high-desktop-width) {
       flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) and (max-width: $pre-high-desktop-width) {
+    margin-top: 44px;
   }
 }
 
 .car-data {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
+
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+
 
   @media (min-width: $high-desktop-width) {
     max-width: 430px;
@@ -124,7 +154,7 @@
     flex-direction: column;
   }
 
-  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+  @media (min-width: $desktop-width) and (max-width: $pre-high-desktop-width) {
     max-width: 77%;
   }
 
@@ -166,6 +196,8 @@
   font-weight: 900;
   font-size: 54px;
   line-height: 90%;
+
+  margin-top: 8px;
 
   color: #333333;
 }

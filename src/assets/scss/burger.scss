@@ -13,7 +13,6 @@
     display: none;
   }
 
-
 }
 
 .nav__burger--closed {
@@ -26,22 +25,21 @@
     height: 4px;
     background-color: $color-black;
     border-radius: 20px;
+
+    @media(max-width: $mobile-width) {
+      background-color: $color-white;
+    }
   }
 
   &:before {
-    /*content: '';
-    position: absolute;*/
     top: 4px;
-    /*left: 5%;*/
-
-
     width: 90%;
-    /*height: 4px;
-    background-color: $color-black;
-    border-radius: 20px;*/
 
-    box-shadow: 0 9px 0 $color-black,
-                /*0 18px 0 #81B3D2;*/
+    box-shadow: 0 9px 0 $color-black;
+
+    @media(max-width: $mobile-width) {
+      box-shadow: 0 9px 0 $color-white;
+    }
   }
   &:after {
     /*content: '';
