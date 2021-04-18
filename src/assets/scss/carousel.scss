@@ -104,14 +104,48 @@
   transition: transform 0s;
 }
 
-
 .hide {
   transform: translatex(100%);
-  /*animation-duration: 1s;*/
 }
 
 
 
+.carousel__poitns {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  z-index: 5;
+
+  bottom: 10%;
+  left: 50%;
+
+
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+    left: 50%;
+  }
+}
+
+.carousel__item-point {
+  width: 6px;
+  height: 6px;
+
+  margin-right: 10px;
+
+  border-radius: 30px;
+  background-color: #FFF;
+  opacity: 0.4;
+}
+
+.carousel__item-point--select {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
 
 
 .carousel {
@@ -131,7 +165,7 @@
   right: 5%;
   bottom: 10%;
 
-   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
       display: none;
    }
 }
@@ -201,9 +235,12 @@
   }
 }
 
+/**/
 .prev {
   transform: rotate(180deg);
 }
+
+
 
 .item {
   position: absolute;
@@ -217,6 +254,11 @@
   width: 100%;
 
   background: $color-black;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+    align-items: flex-start;
+    justify-content: normal;
+  }
 }
 
 .item__info {
@@ -225,7 +267,14 @@
   left: 70px;
   top: 70px;
 
+  max-width: 80%;
+
   color: $color-white;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+    top: 45%;
+    left: 44px;
+  }
 }
 
 
@@ -247,7 +296,7 @@
   font-size: 30px;
   line-height: 36px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     display: none;
   }
 }
@@ -255,4 +304,9 @@
 .item__img {
   max-width: 100%;
   vertical-align: bottom;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
+    margin-left: 15%;
+  }
 }
+
