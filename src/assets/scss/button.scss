@@ -14,12 +14,15 @@
   outline: none;
 
   &:hover {
-    background: #669EC0;
+    background: #111111;
+    color: #fff;
+    border: 1px solid #111111;
   }
 
   &:active {
-    background: #5496BD;
-    color: rgba(255, 255, 255, .2);
+    background: #575757;
+    color: #FFFFFF;
+    border: 1px solid #575757;
   }
 
   @media(min-width: $tablet-width) {
@@ -30,4 +33,10 @@
 .btn--primary {
   color: #FFFFFF;
   background-color: #FF9514;
+}
+
+.btn--disabled {
+  color: #FFFFFF;
+  background: rgba(255, 149, 20, 0.4);
+
 }

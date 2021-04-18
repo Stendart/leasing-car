@@ -7,7 +7,6 @@ const priceAutoText = document.getElementById("priceAutoText");
 priceAuto.oninput = function() {
   console.log('test', this.value)
   priceAutoText.value = this.value;
-  this.style.background = 'linear-gradient(to right, #000 0%, #000 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
 };
 
 priceAutoText.onchange = function() {
@@ -34,7 +33,6 @@ const initialPay = document.getElementById("initial-pay");
 initialPay.oninput = function() {
   console.log('test', this.value)
   initialPayInfo.value = this.value;
-  this.style.background = 'linear-gradient(to right, #000 0%, #000 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
 };
 
 initialPayInfo.onchange = function() {
@@ -58,7 +56,6 @@ const leasing = document.getElementById("leasing");
 leasing.oninput = function() {
   console.log('test', this.value)
   leasingInfo.value = this.value;
-  this.style.background = 'linear-gradient(to right, #000 0%, #000 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
 };
 
 leasingInfo.onchange = function() {
