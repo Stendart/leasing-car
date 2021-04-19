@@ -81,13 +81,10 @@
   border-radius: 16px;
   /*position: relative;*/
 
-  font-family: Nekst-Black;
-  font-style: normal;
+  font-family: Nekst;
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
-
-  color: $color-gray;
 
 }
 
@@ -111,6 +108,10 @@
 
   width: 69px;
   height: 54px;
+
+  font-family: Nekst;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .symbol--rub {
@@ -119,12 +120,19 @@
   vertical-align: middle;
 }
 
+.symbol--rub-total {
+  width: 30px;
+  height: 45px;
+  vertical-align: sub;
+}
+
 .symbol--percen {
   background: #E0E0E0;
   border-radius: 16px;
 }
 
 .symbol--mounth {
+  font-size: 30px;
 }
 
 
@@ -185,18 +193,13 @@
 
 
 .contract__title {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 150%;
 
   color: #333333;
 }
 
 .contract__sum {
-  font-family: Nekst-Black;
-  font-style: normal;
+  font-family: Nekst;
   font-weight: 900;
   font-size: 54px;
   line-height: 90%;
@@ -204,6 +207,10 @@
   margin-top: 8px;
 
   color: #333333;
+
+  @media (min-width: $high-desktop-width) {
+    color: $color-gray;
+  }
 }
 
 .price__btn-wrap {
