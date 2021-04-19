@@ -70,3 +70,10 @@ console.log('leasing.max', leasing.max)
   leasing.value = this.value;
 };
 
+
+
+(function init() {
+  priceAutoText.value = priceAuto.value;
+  initialPayInfo.value = initialPay.value;
+  leasingInfo.value = leasing.value;
+})()

@@ -5,7 +5,8 @@ const nextBtn = document.querySelector('.js__next');
 
 const carouselPoitns = document.querySelector('.carousel__poitns');
 const sliderPoints = [];
-console.log('carouselPoitns', carouselPoitns)
+
+const animContainer = document.querySelector('.container');
 
 let numSlide = 0;
 
@@ -45,7 +46,8 @@ function setSlide() {
       item.classList.remove('item__fast-anim');
       item.classList.add('hide');
     }
-
+    animContainer.style.display = 'none';
+    animContainer.style.display = 'block';
   });
 }
 
@@ -77,3 +79,9 @@ prevBtn.addEventListener('click', () => changeSlide('prev'));
 nextBtn.addEventListener('click', () => changeSlide('next'));
 
 setInterval(changeSlide, 10000, 'next');
+
+
+
+
+
+

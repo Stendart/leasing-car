@@ -1,0 +1,40 @@
+.carousel__poitns {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  z-index: 5;
+
+  bottom: 10%;
+  left: 50%;
+
+
+  @media (min-width: $desktop-width) and (max-width: $high-desktop-width) {
+    left: 50%;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 24px;
+  }
+}
+
+.carousel__item-point {
+  width: 6px;
+  height: 6px;
+
+  margin-right: 10px;
+
+  border-radius: 30px;
+  background-color: #FFF;
+  opacity: 0.4;
+}
+
+.carousel__item-point--select {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}

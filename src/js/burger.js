@@ -4,7 +4,6 @@ const nav = document.querySelector('.menu');
 
 
 burger.onclick = function() {
-  console.log('=================')
   if(this.classList.contains('nav__burger--opend')) {
     this.classList.remove('nav__burger--opend');
     this.classList.add('nav__burger--closed');
