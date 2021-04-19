@@ -21,9 +21,10 @@
 body {
   margin: 0;
 
-  font-family: PT Sans;
 
-  color: $color-gray;
+
+
+
 }
 
 p {
@@ -33,4 +34,17 @@ p {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  color: $color-gray;
 }

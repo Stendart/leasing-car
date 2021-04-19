@@ -4,6 +4,7 @@
   max-width: 100%;
 
   text-decoration: none;
+  outline: none;
 
   border: 1px solid #FF9514;
   border-radius: 40px;
@@ -11,7 +12,8 @@
   padding: 12px 24px;
   color: #FF9514;
 
-  outline: none;
+  font-weight: bold;
+  line-height: 24px;
 
   &:hover {
     background: #111111;
