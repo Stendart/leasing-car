@@ -115,12 +115,9 @@
   /*margin-right: 30px;*/
 }
 
-.nav__item:last-child {
-  margin-left: 24px;
-}
+
 
 .menu__item {
-
   &:not(:last-child) {
     padding: 6px 16px;
   }
@@ -132,6 +129,10 @@
   }
 }
 
+.nav__item:last-child {
+  margin-left: 24px;
+  background: #fff;
+}
 .menu__link {
   font-weight: bold;
   line-height: 24px;
