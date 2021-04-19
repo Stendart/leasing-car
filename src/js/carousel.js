@@ -10,6 +10,8 @@ const animContainer = document.querySelector('.container');
 
 let numSlide = 0;
 
+let timeChangeSlide = 10000;
+
 
 function changeSlide(direction) {
   if(direction === 'next') {
@@ -32,6 +34,11 @@ function changeSlide(direction) {
   sliderPoints[numSlide].classList.add('carousel__item-point--select');
 
   setSlide();
+  resetAnim();
+
+
+clearTimeout(timerId);
+timerId = setTimeout(changeSlide, timeChangeSlide, 'next');
 }
 
 function setSlide() {
@@ -46,9 +53,13 @@ function setSlide() {
       item.classList.remove('item__fast-anim');
       item.classList.add('hide');
     }
-    animContainer.style.display = 'none';
-    animContainer.style.display = 'block';
   });
+}
+
+function resetAnim() {
+  animContainer.classList.remove('container__anim');
+  animContainer.offsetWidth = animContainer.offsetWidth; //Что бы не пропустило действие удаления-добавления класса
+  animContainer.classList.add('container__anim');
 }
 
 function createDomElement(el = 'li') {
@@ -78,10 +89,16 @@ initSliderPoints();
 prevBtn.addEventListener('click', () => changeSlide('prev'));
 nextBtn.addEventListener('click', () => changeSlide('next'));
 
-setInterval(changeSlide, 10000, 'next');
+//const intervalSlides = setInterval(changeSlide, timeChangeSlide, 'next');
+
+/*let timerId = setTimeout(function tick() {
+  changeSlide('next');
+  timerId = setTimeout(tick, timeChangeSlide); // (*)
+}, timeChangeSlide);*/
 
 
-
-
-
+let timerId = setTimeout(() => {
+  changeSlide('next');
+  //timerId = setTimeout(tick, timeChangeSlide); // (*)
+}, timeChangeSlide);
 
