@@ -5,14 +5,10 @@ const priceAutoText = document.getElementById("priceAutoText");
 
 
 priceAuto.oninput = function() {
-  console.log('test', this.value)
   priceAutoText.value = this.value;
 };
 
 priceAutoText.onchange = function() {
-  console.log('test', this.value)
-console.log('priceAuto.max', priceAuto.max)
-
   if(+this.value > +priceAuto.max) {
     this.value = priceAuto.max
   } else if(+this.value < +priceAuto.min) {
@@ -28,16 +24,17 @@ console.log('priceAuto.max', priceAuto.max)
 
 const initialPayInfo = document.getElementById("initial-pay-info");
 const initialPay = document.getElementById("initial-pay");
+const percent = document.getElementById("percent");
+
+
 
 
 initialPay.oninput = function() {
-  console.log('test', this.value)
-  initialPayInfo.value = this.value;
+  percent.innerHTML = this.value + '%';
+  initialPayInfo.value = priceAuto.value/100*initialPay.value;
 };
 
 initialPayInfo.onchange = function() {
-  console.log('test', this.value)
-console.log('initialPay.max', initialPay.max)
 
   if(+this.value > +initialPay.max) {
     this.value = initialPay.max
@@ -54,13 +51,10 @@ const leasing = document.getElementById("leasing");
 
 
 leasing.oninput = function() {
-  console.log('test', this.value)
   leasingInfo.value = this.value;
 };
 
 leasingInfo.onchange = function() {
-  console.log('test', this.value)
-console.log('leasing.max', leasing.max)
 
   if(+this.value > +leasing.max) {
     this.value = leasing.max
@@ -74,6 +68,8 @@ console.log('leasing.max', leasing.max)
 
 (function init() {
   priceAutoText.value = priceAuto.value;
-  initialPayInfo.value = initialPay.value;
+  initialPayInfo.value = priceAuto.value/100*initialPay.value;
+  percent.innerHTML = initialPay.value + '%';
   leasingInfo.value = leasing.value;
 })()
+
